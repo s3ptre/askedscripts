@@ -1,0 +1,4 @@
+loadstring(game:HttpGet('https://raw.githubusercontent.com/s3ptre/askedscripts/main/Limit%20oxy%20msg%20loadscreen'))() 
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/s3ptre/askedscripts/main/limitoxyscript'))() 
+
