@@ -1,0 +1,468 @@
+local gm2
+local oldtool = nil
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Madeby1003z = Instance.new("TextLabel")
+local KillAll = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local WS = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Autofarm = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Admin = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local UICorner_6 = Instance.new("UICorner")
+local de = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Fly = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local teleport = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Open = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local vu = game:GetService("VirtualUser")
+ScreenGui.ResetOnSpawn = false
+
+
+getgenv().aa = false
+ 
+--kill all
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(175, 175, 175)
+MainFrame.BackgroundTransparency = 0.500
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.0995194912, 0, 0.148250341, 0)
+MainFrame.Size = UDim2.new(0, 537, 0, 275)
+
+UICorner.Parent = MainFrame
+
+Madeby1003z.Name = "Made by 1003z"
+Madeby1003z.Parent = MainFrame
+Madeby1003z.BackgroundColor3 = Color3.fromRGB(175, 175, 175)
+Madeby1003z.BackgroundTransparency = 1.000
+Madeby1003z.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Madeby1003z.BorderSizePixel = 0
+Madeby1003z.Size = UDim2.new(0, 536, 0, 54)
+Madeby1003z.Font = Enum.Font.SourceSans
+Madeby1003z.Text = "made by Hyponix"
+Madeby1003z.TextColor3 = Color3.fromRGB(0, 0, 0)
+Madeby1003z.TextSize = 57.000
+
+KillAll.Name = "KillAll"
+KillAll.Parent = MainFrame
+KillAll.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+KillAll.BackgroundTransparency = 0.450
+KillAll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KillAll.BorderSizePixel = 0
+KillAll.Position = UDim2.new(0.151260525, 0, 0.248239473, 0)
+KillAll.Size = UDim2.new(0, 172, 0, 44)
+KillAll.Font = Enum.Font.SourceSans
+KillAll.Text = "anti afk"
+KillAll.TextColor3 = Color3.fromRGB(0, 0, 0)
+KillAll.TextSize = 37.000
+
+UICorner_2.Parent = KillAll
+
+WS.Name = "WS"
+WS.Parent = MainFrame
+WS.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+WS.BackgroundTransparency = 0.300
+WS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WS.BorderSizePixel = 0
+WS.Position = UDim2.new(0.150728762, 0, 0.75272727, 0)
+WS.Size = UDim2.new(0, 178, 0, 42)
+WS.Font = Enum.Font.SourceSans
+WS.Text = "Change Speed"
+WS.TextColor3 = Color3.fromRGB(0, 0, 0)
+WS.TextSize = 14.000
+
+UICorner_3.Parent = WS
+
+Autofarm.Name = "Autofarm"
+Autofarm.Parent = MainFrame
+Autofarm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Autofarm.BackgroundTransparency = 0.500
+Autofarm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Autofarm.BorderSizePixel = 0
+Autofarm.Position = UDim2.new(0.601380289, 0, 0.609291077, 0)
+Autofarm.Size = UDim2.new(0, 179, 0, 41)
+Autofarm.Font = Enum.Font.SourceSans
+Autofarm.Text = "Autofarm"
+Autofarm.TextColor3 = Color3.fromRGB(0, 0, 0)
+Autofarm.TextSize = 37.000
+
+UICorner_4.Parent = Autofarm
+
+Admin.Name = "Admin"
+Admin.Parent = MainFrame
+Admin.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+Admin.BackgroundTransparency = 0.500
+Admin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Admin.BorderSizePixel = 0
+Admin.Position = UDim2.new(0.601380289, 0, 0.248239473, 0)
+Admin.Size = UDim2.new(0, 179, 0, 44)
+Admin.Font = Enum.Font.SourceSans
+Admin.Text = "Iv admin"
+Admin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Admin.TextSize = 37.000
+
+UICorner_5.Parent = Admin
+
+TextLabel.Parent = MainFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.184357539, 0, 0.519999981, 0)
+TextLabel.Size = UDim2.new(0, 136, 0, 23)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "↓ put speed ↓"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 22.000
+
+TextLabel_2.Parent = MainFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.60036236, 0, 0.519999981, 0)
+TextLabel_2.Size = UDim2.new(0, 179, 0, 23)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "↓ click [speed 40] ↓"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 22.000
+
+TextLabel_3.Parent = MainFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.599880457, 0, 0.406510234, 0)
+TextLabel_3.Size = UDim2.new(0, 179, 0, 25)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "↑ prefix is . ↑"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 22.000
+
+TextLabel_4.Parent = MainFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+TextLabel_4.BackgroundTransparency = 0.800
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(-0.00372439483, 0, -0.0014888139, 0)
+TextLabel_4.Size = UDim2.new(0, 537, 0, 54)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = ""
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextSize = 14.000
+
+TextBox.Parent = MainFrame
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BackgroundTransparency = 0.400
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.150885046, 0, 0.603636503, 0)
+TextBox.Size = UDim2.new(0, 177, 0, 40)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "16"
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 22.000
+
+UICorner_6.Parent = TextBox
+
+de.Name = "de"
+de.Parent = MainFrame
+de.BackgroundColor3 = Color3.fromRGB(252, 73, 73)
+de.BackgroundTransparency = 0.200
+de.BorderColor3 = Color3.fromRGB(241, 14, 14)
+de.BorderSizePixel = 0
+de.Size = UDim2.new(0, 32, 0, 30)
+de.Font = Enum.Font.SourceSans
+de.Text = "X"
+de.TextColor3 = Color3.fromRGB(0, 0, 0)
+de.TextSize = 31.000
+
+UICorner_7.Parent = de
+
+Fly.Name = "Fly"
+Fly.Parent = MainFrame
+Fly.BackgroundColor3 = Color3.fromRGB(255, 160, 253)
+Fly.BackgroundTransparency = 0.450
+Fly.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(0.600451827, 0, 0.762207687, 0)
+Fly.Size = UDim2.new(0, 90, 0, 39)
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = "Fly v3"
+Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fly.TextSize = 35.000
+
+UICorner_8.Parent = Fly
+
+teleport.Name = "teleport"
+teleport.Parent = MainFrame
+teleport.BackgroundColor3 = Color3.fromRGB(146, 255, 248)
+teleport.BackgroundTransparency = 0.500
+teleport.BorderColor3 = Color3.fromRGB(0, 0, 0)
+teleport.BorderSizePixel = 0
+teleport.Position = UDim2.new(0.767225325, 0, 0.75999999, 0)
+teleport.Size = UDim2.new(0, 89, 0, 40)
+teleport.Font = Enum.Font.SourceSans
+teleport.Text = "Tp Tool"
+teleport.TextColor3 = Color3.fromRGB(0, 0, 0)
+teleport.TextSize = 30.000
+
+UICorner_9.Parent = teleport
+
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.fromRGB(169, 173, 171)
+Open.BackgroundTransparency = 0.500
+Open.BorderColor3 = Color3.fromRGB(253, 255, 252)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0.869051516, 0, 0.499594867, 0)
+Open.Size = UDim2.new(0, 103, 0, 33)
+Open.Font = Enum.Font.ArialBold
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextSize = 25.000
+
+UICorner_10.Parent = Open
+
+-- Scripts:
+
+local function UFMTNW_script() -- Madeby1003z.LocalScript 
+	local script = Instance.new('LocalScript', Madeby1003z)
+
+	-- LocalScript inside TextLabel
+	
+	local textLabel = script.Parent
+	
+	-- Function to convert HSV to RGB
+	local function HSVtoRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return Color3.new(r, g, b)
+	end
+	
+	local hue = 0
+	
+	while true do
+		-- Increment the hue value
+		hue = hue + 0.01
+		if hue > 1 then
+			hue = 0
+		end
+	
+		-- Set the text color using the hue value
+		textLabel.TextColor3 = HSVtoRGB(hue, 1, 1)
+	
+		-- Wait a short time before updating again
+		wait(0.1)
+	end
+	
+end
+coroutine.wrap(UFMTNW_script)()
+local function DLKIKLO_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local SGui = script.Parent
+	local Frame = SGui:WaitForChild("MainFrame")
+	local Button = SGui:WaitForChild("Open")
+	
+	Button.MouseButton1Up:Connect(function()
+		Frame.Visible = not Frame.Visible
+	end)
+	
+	
+end
+coroutine.wrap(DLKIKLO_script)()
+
+
+local function changeSpeed()
+    local speed = tonumber(TextBox.Text)
+    if speed and speed > 0 then
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local humanoid = character:FindFirstChildOfClass("Humanoid")
+        if humanoid then
+            humanoid.WalkSpeed = speed
+        else
+            warn("Humanoid not found.")
+        end
+    else
+        warn("Invalid speed value entered.")
+    end
+end
+
+-- Connect the button click to the changeSpeed function
+WS.MouseButton1Click:Connect(changeSpeed)
+       
+
+local autofireEnabled = false
+local newScriptConnection
+local RunService = game:GetService("RunService")
+local plr = game.Players.LocalPlayer
+
+local function autoFire()
+    if plr.Character then
+        local tool = plr.Character:FindFirstChildOfClass("Tool")
+        if tool and tool.Name ~= "Tnt" and tool:FindFirstChild("ExpRemote") then
+            local expRemote = tool.ExpRemote
+            local numFires = getgenv().mika
+            local batchSize = 20 
+            local numBatches = math.ceil(numFires / batchSize)
+
+            for i = 1, numBatches do
+                local args = {}
+                local firesThisBatch = math.min(batchSize, numFires - (i - 1) * batchSize)
+                for j = 1, firesThisBatch do
+                    table.insert(args, nil)
+                end
+                expRemote:FireServer(unpack(args))
+            end
+        end
+    end
+end
+
+Autofarm.MouseButton1Click:Connect(function()
+    autofireEnabled = not autofireEnabled
+    if autofireEnabled then
+        Autofarm.Text = "Stop ⏸️"
+        Autofarm.BackgroundColor3 = Color3.fromRGB(0, 255, 0)  -- Green color for toggled state
+
+        -- Set initial values and start autoFire
+        getgenv().fr7 = true
+        getgenv().mika = 200
+        getgenv().mikaa = true
+
+        -- Connect autoFire function to RenderStepped for continuous firing
+        newScriptConnection = RunService.RenderStepped:Connect(function()
+            pcall(autoFire)
+        end)
+
+        -- Monitor and adjust mikaa based on pingval text
+        spawn(function()
+            while autofireEnabled do
+                wait(1)
+                if getgenv().fr7 and getgenv().pingval > 1000 then
+                    getgenv().mikaa = false
+                elseif getgenv().fr7 and getgenv().pingval < 1000 then
+                    getgenv().mikaa = true
+                end
+            end
+        end)
+    else
+        Autofarm.Text = "Autofarm"
+        Autofarm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)  -- Original color for untoggled state
+
+        -- Execute your code when untoggled (stop the script)
+        getgenv().fr7 = false
+        if newScriptConnection then
+            newScriptConnection:Disconnect()
+            newScriptConnection = nil
+        end
+    end
+end)
+
+KillAll.MouseButton1Click:Connect(function()
+	if plr.Character and plr.Character:FindFirstChildOfClass("Tool") then
+        oldtool = plr.Character:FindFirstChildOfClass("Tool")
+        oldtool.Parent = plr.Backpack
+    end
+    et()
+    wait()
+    ka()
+    wait()
+    plr.Character:FindFirstChildOfClass("Tool").Parent = plr.Backpack
+    if oldtool ~= nil then
+        oldtool.Parent = plr.Character
+    end
+    oldtool = nil
+end)
+
+function et()
+    if plr.Character and not plr.Character:FindFirstChildOfClass("Tool") then
+        for _,v in pairs(plr.Backpack:GetDescendants()) do
+            if v.Name == "Blade" then
+                v.Parent.Parent = plr.Character
+            end
+        end
+    elseif plr.Character and plr.Character:FindFirstChildOfClass("Tool") and plr.Character:FindFirstChildOfClass("Tool").Name == "TnT" then
+        for _,v in pairs(plr.Backpack:GetDescendants()) do
+            if v.Name == "Blade" then
+                plr.Character:FindFirstChildOfClass("Tool").Parent = plr.Backpack
+                v.Parent.Parent = plr.Character
+            end
+        end
+    end
+end
+
+function ka()
+    spawn(function()
+        for _,v in pairs(game.Players:GetChildren()) do
+            if v.Character and v.Character:FindFirstChild("Humanoid") and v.Name ~= plr.Name and not table.find(whitelist,v.Name) and plr.Character:FindFirstChildOfClass("Tool") then
+                local t = plr.Character:FindFirstChildOfClass("Tool")
+                for i = 1,10 do
+                    t.DamageRemote:FireServer(v.Character.Humanoid)
+                end  
+            end
+        end
+    end)
+end
+
+de.MouseButton1Click:Connect(function()
+	ScreenGui:Destroy()
+end)
+
+Admin.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/BloodyBurns/Hex/main/Iv%20Admin%20v2.lua'))()
+end)
+
+Fly.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/EicGZkLc'))()
+end)
+
+teleport.MouseButton1Click:Connect(function()
+    mouse = game.Players.LocalPlayer:GetMouse()
+    tool = Instance.new("Tool")
+    tool.RequiresHandle = false
+    tool.Name = "Tp tool(Equip to Click TP)"
+    tool.Activated:connect(function()
+    local pos = mouse.Hit+Vector3.new(0,2.5,0)
+    pos = CFrame.new(pos.X,pos.Y,pos.Z)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+    end)
+    tool.Parent = game.Players.LocalPlayer.Backpack    
+end)
+
+
