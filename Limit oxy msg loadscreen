@@ -1,0 +1,34 @@
+local screenGusssi = Instance.new("ScreenGui")
+screenGusssi.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+local welcomeLabel = Instance.new("TextLabel")
+welcomeLabel.Size = UDim2.new(0, 200, 0, 50)
+welcomeLabel.Position = UDim2.new(0.5, -100, 0.5, -25)
+welcomeLabel.Text = "by LimitOxy || discord: limitoxy"
+welcomeLabel.TextColor3 = Color3.new(1, 1, 1)  
+welcomeLabel.BackgroundTransparency = 1 
+welcomeLabel.Font = Enum.Font.SourceSansBold
+welcomeLabel.FontSize = Enum.FontSize.Size48
+welcomeLabel.Parent =   
+
+local function removeWelcomeLabel()
+    wait(0.8)  
+    welcomeLabel:Destroy()
+end
+
+removeWelcomeLabel()
+
+local Players = game:GetService("Players")
+local Player = Players.LocalPlayer
+local PlayerGui = Player:WaitForChild("PlayerGui")
+local StarterGuissss = game:GetService("StarterGui")
+local BindableFunction = Instance.new("BindableFunction")
+
+StarterGuissss:SetCore("SendNotification", {
+    Title = "Welcome!",
+    Text = "Script made by LimitOxy",
+    Icon = "rbxthumb://type=AvatarHeadShot&id=" .. Player.UserId .. "&w=180&h=180",
+    Duration = 5,
+    Callback = BindableFunction,
+})
+
